@@ -6,6 +6,9 @@ buildscript {
         classpath 'com.android.tools.build:gradle:0.6.+'
     }
 }
+repositories {
+    mavenCentral()
+}
 apply plugin: 'android-library'
 android {
     compileSdkVersion 19
@@ -38,4 +41,6 @@ android {
 repositories {
     maven { url '' }
 }
-dependencies {}
+dependencies {
+    compile 'com.google.code.gson:gson:2.2.4'
+}
